@@ -5,7 +5,7 @@ RUN apt update
 RUN apt install  apache2 -y
 RUN cd /var/www/html
 RUN touch index.html
-RUN echo "hii" >  index.html
+RUN echo "hiii this" >  index.html
 EXPOSE 80
 CMD [ “apache2”, “-d”, “daemon-off” ]
 
